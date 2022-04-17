@@ -9,6 +9,12 @@
     <color name="white">#FFFFFFFF</color>
     <color name="navigation_selected">#264d59</color>
     <color name="navigation_unselected">#bebe94</color>
+    <color name="blue_dark">#207EFA</color>
+    <color name="blue_light">#E2EFFF</color>
+    <color name="blue_3">#016EFF</color>
+    <color name="gray_1">#CCCCCC</color>
+    <color name="gray_2">#999999</color>
+    <color name="gray_3">#EEEEEE</color>
     <color name="color1">#43978d</color>
     <color name="color2">#f9e07f</color>
     <color name="color3">#f9ad6a</color>

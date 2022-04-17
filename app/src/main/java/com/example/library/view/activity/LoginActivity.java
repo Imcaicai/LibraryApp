@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import com.example.library.R;
+import com.example.library.utils.AuthorUtils;
 import com.example.library.view.fragment.LoginFragment;
 
 public class LoginActivity extends AppCompatActivity {
@@ -17,7 +18,7 @@ public class LoginActivity extends AppCompatActivity {
     }
 
     private void init(){
-        String token;   //???从后端调用
+        String token = AuthorUtils.getInstance(this).getToken();
         if(token != null){
             Intent intent = new Intent(LoginActivity.this, MainActivity.class);
             intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_NEW_TASK);   //???第二个是什么意思

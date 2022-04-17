@@ -1,9 +1,7 @@
 package com.example.library.view.fragment;
 
 import android.annotation.SuppressLint;
-import android.app.Notification;
 import android.os.Bundle;
-import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -16,20 +14,18 @@ import androidx.fragment.app.FragmentTransaction;
 
 import com.example.library.R;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
-import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
 import java.util.Objects;
 
 public class MainFragment extends Fragment {
     public BottomNavigationView navigationView;
-    private FloatingActionButton floatingActionButton;
     private FragmentTransaction childTransaction;
     private FragmentManager childManager;
 
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState){
-        View view = inflater.inflate(R.layout.main_navigation_fragment, container, false);
+        View view = inflater.inflate(R.layout.fragment_main_navigation, container, false);
         navigationView = view.findViewById(R.id.bottom_navigation);
         init();
         return view;
