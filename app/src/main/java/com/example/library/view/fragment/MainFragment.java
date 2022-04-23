@@ -2,6 +2,7 @@ package com.example.library.view.fragment;
 
 import android.annotation.SuppressLint;
 import android.os.Bundle;
+import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -13,6 +14,7 @@ import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 
 import com.example.library.R;
+import com.google.android.material.bottomnavigation.BottomNavigationMenuView;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 import java.util.Objects;
@@ -40,7 +42,7 @@ public class MainFragment extends Fragment {
                 .replace(R.id.main_content_fragment, new WelcomeFragment(), "welcome")
                 .commit();
         childTransaction.commit();
-        navigationView.setOnItemReselectedListener(item -> {
+        navigationView.setOnItemSelectedListener(item -> {
             switch(item.getItemId()){
                 case R.id.welcome: {
                     if(navigationView.getSelectedItemId() != R.id.welcome){
@@ -99,8 +101,9 @@ public class MainFragment extends Fragment {
                 default:
                     break;
             }
-            return;
+            return true;
         });
+
     }
 
     @SuppressLint("NonConstantResourceId")

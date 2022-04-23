@@ -14,3 +14,11 @@ dependencyResolutionManagement {
 }
 rootProject.name = "Library"
 include ':app'
+
+include ':android'
+include ':android'
+include ':android'
+include ':android'
+include ':zxing'
+include ':android'
+include ':android'

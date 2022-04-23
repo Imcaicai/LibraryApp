@@ -1,5 +1,7 @@
 package com.example.library.model;
 
+import android.util.Log;
+
 import androidx.lifecycle.MutableLiveData;
 
 import com.example.library.bean.ChangePasswordBean;
@@ -65,6 +67,8 @@ public class LoginModel {
                 if(response.isSuccessful() && response.body() != null){
                     data.postValue(response.body());
                 }
+                Log.i("","success");
+                Log.i("", "okHttpPost enqueue: \n onResponse:" + response.toString() + "\n body:" + response.body());
             }
 
             @Override

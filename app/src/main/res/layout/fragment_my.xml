@@ -3,13 +3,13 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <Button
+    <ImageView
         android:id="@+id/edit_info_btn"
+        android:src="@drawable/btn_edit_info"
         android:layout_width="102dp"
         android:layout_height="41dp"
         android:layout_marginLeft="280dp"
-        android:layout_marginTop="14dp"
-        android:background="@drawable/background_btn"
+        android:layout_marginTop="50dp"
         android:text="编辑资料"
         android:textColor="@color/black" />
 

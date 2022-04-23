@@ -18,13 +18,29 @@
         android:theme="@style/Theme.Library">
         <activity
             android:name=".view.activity.LoginActivity"
-            android:exported="false" />
+            android:exported="true" >
+        </activity>
+        <activity
+            android:name=".view.activity.NotifyActivity"
+            android:exported="true" >
+        </activity>
+        <activity
+            android:name=".view.activity.BookActivity"
+            android:exported="true" >
+        </activity>
+        <activity
+            android:name=".view.activity.LostActivity"
+            android:exported="true" >
+        </activity>
+        <activity
+            android:name=".view.activity.MapActivity"
+            android:exported="true" >
+        </activity>
         <activity
             android:name=".view.activity.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
